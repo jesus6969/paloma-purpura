@@ -1,0 +1,32 @@
+
+<manifest 
+xmlns:android="http://schemas.android.com/apk/res/android"
+package="paloma.epileptica.fp"
+android:versionCode="1"
+android:versionName="v1"
+android:installLocation="auto">
+    
+<uses-sdk
+android:minSdkVersion="9"
+android:targetSdkVersion="22"/>
+
+<application android:allowBackup="true" android:icon="@drawable/icon" android:labe="paloma" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+    
+    
+<uses-permission android:name="android.permission.INTERNET"/>    
+<uses-permission android:name="android.permission.BATTERY_STATS"/>    
+    
+<activity android:name="com.serakont.ab.SimpleActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize|keyboardHidden">
+
+<meta-data android:name="layout" android:value="layout/main"/>
+<meta-data android:name="menu" android:value="menu/menu"/>    
+<meta-data android:name="URL" android:value="file:///android_asset/index.html"/>    
+<intent-filter>
+    
+<action android:name="android.intent.action.MAIN"/>
+<category android:name="android.intent.category.LAUNCHER"/>    
+    
+    </intent-filter>
+    </activity>    
+    </application>    
+</manifest>
