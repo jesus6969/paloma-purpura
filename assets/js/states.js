@@ -1,4 +1,4 @@
-var juego = new Phaser.Game(320,500,Phaser.AUTO,"b_juego");
+var juego = new Phaser.Game(300,500,Phaser.AUTO,"b_juego");
 
 juego.state.add("preload",preloader);
 juego.state.add("menu",menu);
