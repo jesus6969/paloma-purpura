@@ -1,4 +1,4 @@
-var juego = new Phaser.Game(window.innerWidth, window.innerHeight,Phaser.CANVAS,"b_juego",{ preload: preload, create: create, update: update, render: render });
+var juego = new Phaser.Game(window.innerWidth, window.innerHeight,Phaser.CANVAS,"b_juego");
 
 juego.state.add("preload",preloader);
 juego.state.add("menu",menu);
